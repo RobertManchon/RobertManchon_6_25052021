@@ -21,6 +21,7 @@ export default function displayPhotographers(data) {
 
         sectionPhotographers.appendChild(articlePhotographers);
         articlePhotographers.innerHTML = templatePhotographer;
+        articlePhotographers.className = 'filter';
 
     });
 }
