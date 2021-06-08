@@ -1,7 +1,7 @@
 'use strict';
 
 import GalleryFactory from '../factory/GalleryFactory.js';
-
+import LikeSubscriber from './Likes.js';
 
 export default class MediaBuilder {
     // call the GalleryFactory to create the img section with 'Like' function and the box
@@ -20,7 +20,8 @@ export default class MediaBuilder {
             if (id == element.id) {
                 let box = document.getElementById('box');
                 let boxTemplate = `
-                
+                 <span id="total-likes">${totalLike}</span>
+                 <i class="fas fa-heart" aria-label='likes'></i>
                 <span>${element.price} €/ jour</span>
                 `
                 box.innerHTML = boxTemplate;
