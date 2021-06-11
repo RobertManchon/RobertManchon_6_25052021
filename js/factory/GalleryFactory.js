@@ -1,6 +1,7 @@
 'use strict';
 
 import MediaFactory from './MediaFactory.js';
+import Lightbox from '../photographers/LightBox.js';
 
 export default class GalleryFactory {
     constructor() {
@@ -39,7 +40,8 @@ export default class GalleryFactory {
                 this.totalLike += parseInt(element.likes);
                 currentMedia.push(mediaHTML.outerHTML);
                 currentMediaName.push(element.photoName);
-
+                (new Lightbox())
+                    .init(currentMedia, currentMediaName)
             }
         })
         return this;

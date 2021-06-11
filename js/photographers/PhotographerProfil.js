@@ -1,5 +1,4 @@
 'use strict';
-
 export default class PhotographerProfil {
     // Check on which page the user is located, if the position corresponds with the photographer's "id", create the photographer's 'Profile' section
     displayPhotographerProfil(data) {
@@ -19,8 +18,6 @@ export default class PhotographerProfil {
                 <a href='#' title='${photographers[0].alt}'><img src="${photographers[0].portrait}" alt="${photographers[0].alt}"></a>
             </article>
             `
-
         sectionPhotographerProfil.innerHTML = templatePhotographerProfil;
-
     }
 }
