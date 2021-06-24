@@ -1,7 +1,7 @@
 /* BUTTON 'Passer au contenu' */
 main>a {
     background: #DB8876;
-    border-radius: .3125rem;
+    border-radius: .31rem;
     color: #000;
     display: none;
     flex-wrap: nowrap;

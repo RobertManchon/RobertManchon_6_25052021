@@ -79,13 +79,13 @@ export default class LightBox {
             let lightBoxMedia = document.getElementById('works-lightbox-media');
             let lightBoxName = document.getElementById('works-lightbox-name');
 
-            // ESCAPE TO CLOSE
+            // Escape to close
             if (key.code == "Escape") {
                 let lightBox = document.getElementById('works-lightbox');
                 lightBox.style.display = 'none';
             }
 
-            // ARROW RIGHT TO STEP RIGHT
+            // Arrow right to step right
             else if (key.code == "ArrowRight") {
                 this.currentIndex += 1;
 

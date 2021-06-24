@@ -52,11 +52,11 @@
 
 .ph-tags {
     border: .5px solid #C4C4C4;
-    border-radius: .6875rem;
+    border-radius: .69rem;
     color: #901C1C;
     font-size: 12px;
     margin: 0;
-    padding: .0625rem .375rem;
+    padding: .062rem .37rem;
     text-decoration: none;
     transition: all .2s;
 }
